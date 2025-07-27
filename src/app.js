@@ -24,7 +24,7 @@ class App {
 		const hash = location.hash ? queryString.parse(location.hash) : {};
 		this.options = {
 			kiosk: Boolean(hash.kiosk),
-			model: hash.model || '',
+			model: hash.hasOwnProperty('model') ? hash.model : 'https://r2.gczxtgx.top/gczx%E6%9C%80%E7%BB%88%E7%89%887(1).glb',
 			preset: hash.preset || '',
 			cameraPosition: hash.cameraPosition ? hash.cameraPosition.split(',').map(Number) : null,
 		};
